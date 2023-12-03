@@ -1,7 +1,6 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-import seaborn as sns
 import nomiden
 from nomiden import reader as nr
 
