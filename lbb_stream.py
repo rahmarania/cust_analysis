@@ -7,7 +7,7 @@ from nomiden import reader as nr
 st.set_page_config(layout = "wide")
 
 cust = pd.read_csv("customer_all.csv")
-coord = pd.read_csv('data/coordinate.csv')
+coord = pd.read_csv('coordinate.csv')
 
 nik_generate = pd.DataFrame(cust['NIK'].apply(lambda x: nr.NIK(x).all_info).to_list())
 gab = cust.merge(right = nik_generate,
